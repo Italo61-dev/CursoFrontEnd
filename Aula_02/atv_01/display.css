@@ -1,0 +1,18 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    background-color: #5bacef;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+.item{
+    background-color: #255, 255, 255;
+    border: 3px solid #462cd4;
+    font-size: 30px;
+    text-align: center;
+}
