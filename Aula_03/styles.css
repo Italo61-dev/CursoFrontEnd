@@ -4,7 +4,7 @@ body {
     background-color: #f0f0f0; /* Define a cor de fundo do corpo do documento */
     margin: 0; /* Remove as margens padrão */
     padding: 0; /* Remove os preenchimentos padrão */
-    /* overflow: hidden; */
+    
 }
 
 .container {
@@ -64,6 +64,7 @@ footer {
 
 
 }
+
 .small > h3 {
     text-align: center;
 }
