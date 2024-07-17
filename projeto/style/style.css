@@ -1,10 +1,7 @@
 /* Importa a fonte "Roboto" do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/* Aplica a todos os elementos:
-- margin e padding zerados para evitar espaços indesejados
-- box-sizing: border-box para incluir padding e borda no tamanho total do elemento
-- Define a fonte "Roboto" como padrão */
+
 * {
   margin: 0;
   padding: 0;
@@ -12,16 +9,19 @@
   font-family: "Roboto", sans-serif;
 }
 
-/* Estilo do corpo da página:
-- Define a cor de fundo como cinza */
+
 body {
-  background-image: linear-gradient(to bottom, #000, #7a7676, #ffffff);
+  background-color: #fff;
   height: 100vh;
+  
 }
 
+#principal{
+  background-image: linear-gradient( #000, #7a7676, #ffffff);
 
+}
 nav {
-    background-image: linear-gradient(to bottom, #000, #0f0d0d);
+  background-image: linear-gradient(to bottom, #000, #1e1b1b);
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -76,16 +76,15 @@ nav {
 }
 
 .content {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: justify;
-    color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  color: #fff;
 }
 
-/* Animação slideInLeft:
-- Move o elemento da esquerda para a posição original */
+
 @keyframes slideInLeft {
   0% {
     transform: translateX(-100%);
@@ -95,17 +94,14 @@ nav {
   }
 }
 
-/* Aplica a animação slideInLeft para elementos com classe .shoes:
-- Duração de 1 segundo
-- Mantém a posição final (forwards)
-- Margem esquerda de 180px */
+
 .shoes {
+
   animation: slideInLeft 1s forwards;
-  margin-left: 180px;
+  margin-left: 150px;
 }
 
-/* Animação slideRight:
-- Move o elemento da direita para a posição original */
+
 @keyframes slideRight {
   0% {
     transform: translateX(100%);
@@ -115,17 +111,65 @@ nav {
   }
 }
 
-/* Estilo do texto dentro do conteúdo:
-- Tamanho da fonte 18px
-- Largura máxima de 800px
-- Centraliza o texto (margin: 0 auto)
-- Espaçamento entre letras de 1px
-- Aplica a animação slideRight com duração de 1 segundo e mantém a posição final */
+
 .content span {
+  padding: 30px;
   font-size: 18px;
   max-width: 800px;
   margin: 0 auto;
+  margin-left: 280px ;
   letter-spacing: 1px;
   animation: slideRight 1s forwards;
+}
+
+.twoContent{
+  background-color: #fff;
+  width: 100vw;
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+  
+}
+
+.photo {
+  background-color: rgb(157, 154, 154);
+  width: 300px;
+  height: 300px;
+  transition: transform 0.3s;
+  border-radius: 10px;
+  
+}
+
+.photo:hover{
+  transform: scale(1.1);
+}
+
+.tenis2 {
+  width: 300px;
+  height: 300px;
+}
+
+#but {
+  margin-top: 33px;
+}
+
+#butcommit{
+  margin-top: -23px;
+}
+
+.rating {
+  color: #f39c12; /* Cor das estrelas */
+  font-size: 24px; /* Tamanho das estrelas */
+}
+
+.rating i {
+  margin-right: 5px; /* Espaçamento entre as estrelas */
+}
+
+
+.commit {
+  margin-top: 10px;
+  padding-left: 10px;
 }
 
