@@ -42,7 +42,7 @@ nav{
 
 .nav-links > li{
   list-style-type: none;
-  padding: 14px;
+  padding: 3%;
 }
 
 li > a {
@@ -170,6 +170,7 @@ footer {
     justify-content: space-between;
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 0px;
   }
 
   .content {
@@ -186,13 +187,13 @@ footer {
     font-size: 18px;
     width: 50%;
     margin: 0 auto;
-    margin-bottom: -250px;
+    margin-bottom: -10px;
 
   }
 
   .shoes{
     width: 50%;
-    margin-bottom: -250px;
+    margin-bottom: -100px;
   }
   
   .twoContent {
@@ -205,10 +206,22 @@ footer {
     width: 300px;
     height: 300px;
   }
+  .logo img  {
+    width: 100px;
+    height: 50px;
+    
+  }
+  .nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+   
+  }
 
 }
 
-@media screen and (min-width: 1281px) and (max-width: 2000px) {
+@media screen and (min-width: 1281px) and (max-width: 3000px) {
   nav {
     
     display: flex;
@@ -237,7 +250,7 @@ footer {
 
   .shoes{
     width: 50%;
-    margin-bottom: -250px;
+    margin-bottom: -100px;
   }
   
   .twoContent {
@@ -249,5 +262,18 @@ footer {
   .tenis2 {
     width: 300px;
     height: 300px;
+  }
+
+  .logo img  {
+    width: 100px;
+    height: 50px;
+    
+  }
+  .nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+   
   }
 }
