@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação do DOM</title>
+</head>
+<body>
+    <div id="container">
+        <p>Texto inicial</p>
+    </div>
+
+    <button onclick="adicionarElemento()">Adicionar Elemento</button>
+    <button onclick="removerElementos()">Remover Elementos</button>
+
+    <script>
+        function adicionarElemento() {
+            let novoElemento = document.createElement('p');
+            novoElemento.textContent = 'Novo texto adicionado.';
+
+            let container = document.getElementById('container');
+            container.appendChild(novoElemento);
+        }
+
+        function removerElementos() {
+            let container = document.getElementById('container');
+            let ultimoElemento = container.lastChild;
+
+            container.removeChild(ultimoElemento);
+        }
+    </script>
+</body>
+</html>
