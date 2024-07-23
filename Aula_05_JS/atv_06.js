@@ -1,0 +1,15 @@
+class Person {
+    constructor(nome, idade){
+        this.nome = nome;
+        this.idade = idade;
+    }
+
+    ehMaiorDeidade(){
+        return this.idade >= 18 ? `${this.nome} é maior de idade.` : `${this.nome} não é maior de idade`;
+    }
+}
+
+const pessoa1 = new Person('Ana', 20);
+const pessoa2 = new Person('Carlos', 20);
+console.log(pessoa1.ehMaiorDeidade());
+console.log(pessoa2.ehMaiorDeidade())
