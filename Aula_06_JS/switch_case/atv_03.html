@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let operacao = prompt("Digite a operação matemática desejada (+, -, *, /):");
+        let num1 = parseFloat(prompt("Digite o primeiro número:"))
+        let num2 = parseFloat(prompt("Digite o segundo número:"))
+        let resultado;
+
+        switch (operacao){
+            case '+':
+                resultado = num1 + num2;
+                alert(`${num1} + ${num2} = ${resultado}`)
+                break
+            case '-':
+                resultado = num1 - num2;
+                alert(`${num2} - ${num2} = ${resultado}`)
+                break
+            case '*':
+                resultado = num1 * num2;
+                alert(`${num2} x ${num2} = ${resultado}`)
+                break
+            case '/':
+                if (num2 !==0) {
+                    resultado = num1 / num2;
+                    alert(`O resultado de ${num1} / ${num2} é ${resultado}`)
+                }else{
+                    alert(`Não é possível dividir por zero.`)
+                }
+                break
+            default:                    
+                alert("Operação matemática.");
+        }
+    </script>
+</body>
+</html>

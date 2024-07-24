@@ -1,0 +1,32 @@
+<!-- Faça um programa que pergunte ao usuário qual é o seu estado civil e exiba uma mensagem correspondente: -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let estadoCivil = window.prompt('Digite seu estado cicil: (solteiro, casado, divorciado, viúvo)')
+
+        switch(estadoCivil.toLowerCase()){
+            case 'solteiro':
+                alert("Você é solteiro.");
+                quebrar;
+            case 'casado':
+                alert("Você é casasdo");
+                break;
+            case 'divorciado':
+                alert("Você é divorciado")
+                break;
+            case 'viúvo':
+                alert("Você é viúvo");
+            default:
+                alert("EStado cicil não reconhecido.");
+        }
+    </script>
+    
+</body>
+</html>
