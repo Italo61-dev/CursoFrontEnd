@@ -1,0 +1,33 @@
+<!-- Faça um programa que pergunte a idade de uma pessoa em anos e converta para dias (considere o ano com 365 dias). -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // aqui vai a idade
+        let idadeAnos = window.prompt('Digite sua idade'); 
+
+        // aqui vai da os dias dos ano bisexto
+        let idadeSeto = idadeAnos / 4;
+
+        // aqui vai da os dias 
+        let idadeEmDias = parseFloat(idadeAnos) * 365;
+
+        // dia certo descontando o dia do ano bisexto
+        let diasCerto = idadeEmDias - idadeSeto;
+
+        let diaArredondado = Math.round(diasCerto)
+
+        // aqui vai da o mês
+        let idadeEmMes = idadeAnos * 12;
+
+
+        window.alert(`Você tem ${diaArredondado} dias, e ${idadeEmMes} meses, e ${idadeAnos} anos.` )
+    </script>
+</body>
+</html>
