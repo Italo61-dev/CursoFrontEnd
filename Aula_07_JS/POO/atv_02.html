@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POO com Prompt - Animal</title>
+</head>
+<body>
+    <h1>Ações do Animal</h1>
+    <button onclick="fazerBarulho()">Fazer barulho</button>
+    <button onclick="latir()">Latir</button>
+
+    <script>
+        class Animal {
+            constructor(nome){
+                this
+            }
+            fazerBarulho(){
+                alert('Fazendo barulho genérico');
+            }
+        }
+
+        class Cachorro extends Animal{
+            latir(){
+                alert('au au')
+            }
+        }
+
+        function fazerBarulho(){
+            let animal = new Animal();
+            animal.fazerBarulho();
+        }
+
+        function latir(){
+            let cachorro = new Cachorro();
+            cachorro.fazerBarulho()
+            cachorro.latir(  )
+        }
+    </script>
+</body>
+</html>
