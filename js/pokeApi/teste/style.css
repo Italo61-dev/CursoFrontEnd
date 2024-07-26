@@ -85,7 +85,7 @@ input{
         "label div div"
         "input div div"
         "button div div";
-        grid-template-columns: 1fr 150px 150;
+        grid-template-columns: 1fr 150px 150px;
     }
 
     .container .titulo{
