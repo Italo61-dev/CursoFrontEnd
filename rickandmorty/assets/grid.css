@@ -1,0 +1,56 @@
+@media(min-width: 600px){
+    .container{
+        display: grid;
+        grid-template-areas: 
+        "h2 h2 h2"
+        "label div div"
+        "input div div"
+        "button div div";
+        grid-template-columns: auto auto auto;
+        margin: 0px;
+        gap: 0px;
+        background-color: red;
+    }
+
+    .titulo{
+        display: grid;
+        align-items: end;
+        grid-area: h2;
+        background-color: aquamarine;
+        grid-row: 1/2;
+        height: 100%;
+    }
+
+    .labelArea{
+        display: grid;
+        grid-area: label;
+        grid-row: 2/3;
+        background-color: aqua;
+        height: 100%;
+    }
+
+    #rickInpunt{
+        grid-area: input;
+        background-color: bisque;
+        grid-row:3/4;
+        margin: auto;
+        justify-self: center;
+        
+    }
+
+    
+    .rick-details{
+        grid-area: div;
+        background-color: blue;
+        height: 100%;
+        margin: auto;
+        grid-row: 2/5;
+
+    }
+
+    #fetchRickyButton{
+        grid-area: button;
+        background-color: yellow;
+        margin: auto;
+    }
+}
