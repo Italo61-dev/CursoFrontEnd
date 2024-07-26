@@ -1,0 +1,144 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: url("https://wallpaperaccess.com/full/401170.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fundoCinza{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #17171791;
+}
+
+@keyframes slideInleft {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.container{
+    height: 500px;
+    width: 90%;
+    background-color: #ffffffe1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    row-gap: 10px;
+    animation: slideInleft 1s forwards;
+
+}
+
+
+.textoJs{
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+.imgRick{
+    width: 200px;
+    height: 200px;
+}
+
+ .titulo{
+    flex-direction: column;
+    width: 100%;
+    height: 15%;
+    overflow: auto;
+    align-content: center;
+    
+}
+
+label{
+    width: 100%;
+    height: 10%;
+    align-content: center;
+    margin-bottom: 10px;
+   
+}
+
+#rickInpunt{
+    width: 70%;
+    height: 56px;
+    text-align: center;
+    border:  solid #000 1px;
+    border-radius: 10px;
+    
+}
+
+#rickInpunt:hover{
+    background-color: #c194cba2;
+    color: #000000;
+}
+
+#fetchRickyButton{
+    width: 70%;
+    height: 50px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#fetchRickyButton:hover{
+    background-color: #9a53aa;
+    color: #ffffff;
+}
+
+#rickDetails{
+    width: 100%;
+}
+
+.imgContainer img{
+    margin-top: 20px;
+    transition: transform 0.3s;
+    border-radius: 10px;
+}
+
+.imgContainer img:hover{
+    width: 210px;
+    height: 210px;
+    transition: scale(1.2);
+}
+
+#rickDetails:hover {
+    
+    width: 105%;
+}
+
+@media(min-width: 600px){
+    .container{
+        width: 600px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
