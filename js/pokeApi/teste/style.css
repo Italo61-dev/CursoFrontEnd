@@ -1,0 +1,124 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+body{
+    background-color: rgb(212, 212, 63);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: #fff;
+    display: grid;
+    height: 400px;
+    width: 80%;
+    border-radius: 10px;
+    gap: 10px;
+    box-shadow: 2px 2px 2px #646262;
+}
+
+
+
+h1{
+    border-radius: 10px;
+    font-size: 2rem;
+    text-align: center;
+    display: flex; /* Adiciona flex display */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    height: 100%;
+}
+
+label{
+    text-align: center;
+    padding-top: 12px;
+    align-self: center;
+    justify-self: center;
+    width: 80%;
+    height: 30px;
+    font-weight: bolder;
+}
+
+input{
+    width: 80%;
+    height: 80%;
+    text-align: center;
+    justify-self: center;
+    border-radius: 10px;
+}
+
+.container #fetchPokemonButton{
+    height: 70%;
+    width: 80%;
+    color: #000000;
+    align-self: center;
+    justify-self: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.container #fetchPokemonButton:hover{
+    background-color: #646262;
+    color: #fff;
+    font-weight: bolder;
+}
+
+#pokemonDetails{
+    
+    text-align: center;
+    border-radius: 10px;
+
+
+}
+
+@media only screen and (min-width: 800px) {
+    .container{
+        display: grid;
+        grid-template-areas: 
+        "h1 h1 h1"
+        "label div div"
+        "input div div"
+        "button div div";
+        grid-template-columns: 1fr 150px 150;
+    }
+
+    .container .titulo{
+        grid-area: h1;
+        
+    }
+
+    .paragrafo{
+        grid-area: label;
+        height: 0px;
+    }
+
+    #pokemonInput{
+        margin: auto;
+        grid-area: input;
+        height: 40px;
+    }
+
+    .container #fetchPokemonButton{
+        grid-area: button;
+        height: 40px;
+        margin: auto;
+    }
+
+    .pokemon-details{
+        grid-area: div;
+        margin: auto;
+        padding: 20px;
+    }
+
+    
+}
+
+
+
+
