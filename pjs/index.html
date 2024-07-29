@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Aluno</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <section class="container">
+                <h1>Cadastro de Aluno</h1>
+
+                <form id="CadastoForm">
+
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" name="telefone" id="telefone" required>
+                    </div>
+
+                    <button type="submit">Cadastrar</button>
+                </form>
+                <div id="mensagem"></div>
+                <h2>Alunos Cadastrados</h2>
+                <ul id="listaAlunos"></ul>
+        </section>
+
+    </main>  
+    <script src="script.js"></script>
+</body>
+</html>
