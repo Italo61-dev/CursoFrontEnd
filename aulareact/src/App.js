@@ -1,15 +1,22 @@
-import React, { useState } from 'react';
+import React, {useState} from "react";
+import './App.css';
 
-function App() {
-  const  [count, setCount] = useState(0);
+function App(){
+  const[isDarkMode, setIsDarkMode] = useState(false);
 
-  return (
-    <div>
-      <h1>Contador: {count}</h1>
 
-      <button onClick={() => setCount(count+1)}>Incrementar</button>
-      <button onClick={() => setCount(count-1)}>Descrementar</button>
+  // função para alternar o tema
+  const toggletheme = () => {
+    setIsDarkMode(!isDarkMode);
+  }
 
+  return(
+    <div className={isDarkMode ? 'dark-mode' : 'light-mode'}>
+
+      <button onClick={toggletheme}>
+        Mudar para {isDarkMode ? 'Modo Claro' : 'Modo Escuro'}
+      </button>
+      <h1>Olá, Mundo</h1>
     </div>
   )
 }
