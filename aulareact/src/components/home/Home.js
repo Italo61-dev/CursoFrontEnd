@@ -1,10 +1,10 @@
 import React from 'react'
 import './style.css'
 
-function Footer() {
+function Home() {
   return (
-    <div>Footer</div>
+    <div>Home</div>
   )
 }
 
-export default Footer
+export default Home

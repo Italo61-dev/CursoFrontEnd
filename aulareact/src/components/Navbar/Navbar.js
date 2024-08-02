@@ -1,8 +1,9 @@
 import React from 'react'
+import './style.css'
 
 function Navbar() {
   return (
-    <div>Navbar</div>
+        <div>Navbar</div>
   )
 }
 
