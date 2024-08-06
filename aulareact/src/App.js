@@ -1,19 +1,17 @@
-import React from "react";
-import Saudacao from "./atv_props/Saudacao";
-import CartaoDeContato from "./atv_props/CartaoDeContato";
-import Contador from "./atv_props/Contador";
-import MensagemDeErro from "./atv_props/MensagemDeErro";
-
+import React from 'react'
+import Header from './components/header/Header'
+import MainContent from './components/main/MainContent'
+import Footer from './components/footer/Footer'
+import './global.css'
 
 function App() {
   return (
-   <div>
-    <h1>Mensagens de Erro</h1>
-    <MensagemDeErro mensagem='Ocorreu um erro inesperado. Tente novamente.'/>
-   </div>
+    <div className='App'>
+      <Header/>
+      <MainContent/>
+      <Footer/>
+    </div>
   )
 }
 
-
-
-export default App;
+export default App
