@@ -1,24 +1,16 @@
-import React from 'react'
-import Navbar from './components/navbar/Navbar';
-import Footer from './components/footer/Footer';
-import Home from './components/home/Home';
-import Greeting from './atv_props/Greeting';
-import './global.css'
+import React from "react";
+import Saudacao from "./atv_props/Saudacao";
+import CartaoDeContato from "./atv_props/CartaoDeContato";
+import Contador from "./atv_props/Contador";
+import MensagemDeErro from "./atv_props/MensagemDeErro";
 
 
 function App() {
   return (
-    <>
-    <Navbar/>
-    <Greeting
-    name = 'Maria'
-    />
-    <Greeting
-    name = 'João'
-    />
-    <Home/>
-    <Footer/>  
-    </>
+   <div>
+    <h1>Mensagens de Erro</h1>
+    <MensagemDeErro mensagem='Ocorreu um erro inesperado. Tente novamente.'/>
+   </div>
   )
 }
 
