@@ -1,0 +1,44 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --cor-fundo: #000000; /* Preto */
+    --cor-texto-principal: #ffffff; /* Branco */
+    --cor-fundo-conteudo: #D3D3D3; /* Cinza Claro */
+    --cor-botao: #C8102E; /* Vermelho Escuro */
+    --cor-botao-hover: #A10F27; /* Variação mais escura do Vermelho Escuro */
+    --cor-link: #C8102E; /* Vermelho Escuro */
+    --cor-detalhes: #FFD700; /* Dourado */
+    --cor-borda-imagem: #FFD700; /* Dourado */
+    --cor-texto-secundario: #f70000;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    
+    background-color: #00ff4c;
+    height: 100vh;
+}
+
+main {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto-principal);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+footer{
+    background-color: var(--cor-link);
+    width: 100vw;
+}

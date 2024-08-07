@@ -1,12 +1,16 @@
 import React from 'react'
-import Fotter from './components/Footer/Footer'
-
+import Header from './components/header/Header'
+import MainContent from './components/main/MainContent'
+import Footer from './components/footer/Footer'
+import './global.css'
 
 function App() {
   return (
-    <>
-    <Fotter/>
-    </>
+    <div className='App'>
+      <Header/>
+      <MainContent/>
+      <Footer/>
+    </div>
   )
 }
 

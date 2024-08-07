@@ -1,9 +1,11 @@
 import React from 'react'
 
-function Fotter() {
+function Footer() {
   return (
-    <div>Fotter</div>
+    <footer>
+      <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+    </footer>
   )
 }
 
-export default Fotter
+export default Footer
