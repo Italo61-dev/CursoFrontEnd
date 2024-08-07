@@ -1,4 +1,5 @@
 import { useState } from "react"
+import './global.css'
 
 function App() {
   const [password, setPassword] = useState("")
@@ -22,11 +23,11 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="main">
       <h1>Gerador de senhas</h1>
 			<button onClick={generate}>Gerar!</button>
 			<button onClick={copyToClipboard}>{copyText}</button>
-      <div>{password}</div>
+      <div className="password">{password}</div>
     </div>
   )
 }
