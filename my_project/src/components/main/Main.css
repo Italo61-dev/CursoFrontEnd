@@ -1,0 +1,70 @@
+/* Estilos para o container do carrossel */
+#slideContainer {
+    background-image: url(../../img/netflix-700x394.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 100vw; /* Largura total da viewport */
+    height: 300px; /* Altura do contêiner */
+}
+
+/* Estilos para o contêiner de imagens do carrossel */
+.fundoCinza {
+    display: flex; /* Alinha as imagens horizontalmente */
+    align-items: center;
+    justify-content: flex-start; /* Alinha as imagens à esquerda */
+    overflow-x: hidden; /* Esconde a rolagem horizontal padrão */
+    scroll-behavior: smooth; /* Suaviza a rolagem */
+    background-color: rgba(7, 7, 7, 0.37); /* Cor de fundo existente */
+    height: 100%; /* Garante que o contêiner tenha altura total do pai */
+}
+.carouselTitle {
+    position: absolute; /* Posiciona o título sobre o carrossel */
+    top: 10px; /* Espaço do topo do contêiner */
+    left: 10px; /* Espaço da borda esquerda do contêiner */
+    color: var(--cor-detalhes); /* Cor do texto */
+    font-size: 24px; /* Tamanho da fonte */
+    font-weight: bold; /* Deixa o texto em negrito */
+    z-index: 2; /* Garante que o título fique sobre o carrossel e as imagens */
+}
+
+/* Faz com que cada imagem tenha um tamanho fixo e não fique distorcida */
+.fundoCinza img {
+    width: auto; /* Mantém a proporção da largura */
+    height: 200px; /* Define a altura das imagens */
+    margin-right: 20px; /* Espaço entre as imagens */
+    flex-shrink: 0; /* Impede que as imagens encolham */
+    object-fit: cover; /* Garante que a imagem preencha a caixa sem distorção */
+    border-radius: 8px; /* Arredonda os cantos das imagens */
+    border: 2px solid #000; /* Adiciona uma borda preta */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Transição suave para transformações e filtros */
+
+}
+
+.fundoCinza img:hover {
+    transform: scale(1.1); /* Aumenta o tamanho da imagem em 10% */
+    filter: brightness(1.2); /* Aumenta o brilho da imagem */
+}
+
+
+/* Estilos para os botões de navegação */
+.prev, .next {
+    background-color: var(--cor-detalhes); /* Cor de fundo dourada */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px; /* Tamanho das setas */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1; /* Coloca os botões acima do conteúdo */
+}
+
+.prev {
+    left: 10px; /* Posiciona o botão de rolagem para a esquerda */
+}
+
+.next {
+    right: 10px; /* Posiciona o botão de rolagem para a direita */
+}
+
